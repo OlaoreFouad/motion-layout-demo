@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:autoTransition="animateToEnd"
+        app:constraintSetStart="@id/start"
+        app:duration="10000">
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                app:framePosition="10"
+                app:motionTarget="@id/twitter_image"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                />
+
+            <KeyAttribute
+                app:framePosition="30"
+                app:motionTarget="@id/twitter_image"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                />
+
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/twitter_image"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                />
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start" />
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:layout_width="100dp"
+            android:id="@+id/twitter_image"
+            android:layout_height="100dp">
+
+            <Transform
+                android:scaleX="100"
+                android:scaleY="100" />
+
+        </Constraint>
+
+    </ConstraintSet>
+
+</MotionScene>
