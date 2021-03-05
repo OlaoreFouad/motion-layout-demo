@@ -7,13 +7,13 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/twitter_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/twitter_image"
+        android:src="@drawable/twitter_logo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/twitter_logo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

@@ -6,7 +6,9 @@
         app:constraintSetEnd="@id/end"
         app:autoTransition="animateToEnd"
         app:constraintSetStart="@id/start"
-        app:duration="10000">
+        app:duration="10000"
+        app:motionInterpolator="linear"
+        app:staggered=".65">
 
         <KeyFrameSet>
 
